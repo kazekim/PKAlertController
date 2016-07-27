@@ -107,11 +107,13 @@
 {
     switch (indexPath.row) {
         case KBankAlertMenuIndexKMobilePlus:
-            
+            if(_delegate != Nil)
+                [_delegate onSelectKMobileBangkingPlus];
             break;
             
         case KBankAlertMenuIndexQRCode:
-            
+            if(_delegate != Nil)
+                [_delegate onSelectQRCodeScanner];
             break;
     }
 }

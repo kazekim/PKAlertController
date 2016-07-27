@@ -14,9 +14,15 @@ typedef NS_ENUM(NSInteger, KBankAlertMenuIndex) {
     KBankAlertMenuIndexQRCode
 };
 
+@protocol KBankAlertViewDelegate
+- (void)onSelectKMobileBangkingPlus;
+- (void)onSelectQRCodeScanner;
+@end
+
 @interface KBankAlertView : UIView<UITableViewDelegate,UITableViewDataSource,PKAlertViewLayoutAdapter>
 
 @property (retain,nonatomic) IBOutlet UITableView *tableView;
+@property (assign) id <KBankAlertViewDelegate> delegate;
 
 + (id)initFromNibs;
 
