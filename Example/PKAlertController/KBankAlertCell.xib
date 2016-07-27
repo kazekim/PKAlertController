@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g0U-Wo-6If" id="cBK-fa-Xl9">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_kmobilebankingplus" translatesAutoresizingMaskIntoConstraints="NO" id="WWb-8s-39d">
@@ -31,27 +31,51 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JeX-BV-wRK">
+                        <rect key="frame" x="-12" y="59" width="344" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="y5g-3B-fDA"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="WWb-8s-39d" firstAttribute="leading" secondItem="cBK-fa-Xl9" secondAttribute="leadingMargin" constant="5" id="16c-6X-Zxf"/>
+                    <constraint firstItem="dVb-ph-mDE" firstAttribute="top" secondItem="JeX-BV-wRK" secondAttribute="bottom" id="CK3-xL-uNZ"/>
                     <constraint firstItem="dVb-ph-mDE" firstAttribute="centerY" secondItem="cBK-fa-Xl9" secondAttribute="centerY" id="DeA-96-qC1"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dVb-ph-mDE" secondAttribute="trailing" id="Hxy-Z3-SIn"/>
                     <constraint firstItem="WWb-8s-39d" firstAttribute="top" secondItem="cBK-fa-Xl9" secondAttribute="top" constant="5" id="IoI-ws-gVO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JeX-BV-wRK" secondAttribute="trailing" constant="-20" id="NjM-Ma-a3B"/>
                     <constraint firstItem="WWb-8s-39d" firstAttribute="centerY" secondItem="cBK-fa-Xl9" secondAttribute="centerY" id="XgJ-yv-tva"/>
                     <constraint firstItem="dVb-ph-mDE" firstAttribute="leading" secondItem="WWb-8s-39d" secondAttribute="trailing" constant="8" symbolic="YES" id="az6-Rk-mnf"/>
+                    <constraint firstItem="JeX-BV-wRK" firstAttribute="leading" secondItem="cBK-fa-Xl9" secondAttribute="leadingMargin" constant="-20" id="rAe-39-SVh"/>
                     <constraint firstItem="dVb-ph-mDE" firstAttribute="top" secondItem="cBK-fa-Xl9" secondAttribute="topMargin" constant="11" id="waw-VD-2dN"/>
                     <constraint firstItem="dVb-ph-mDE" firstAttribute="centerY" secondItem="WWb-8s-39d" secondAttribute="centerY" id="zf6-MX-3D5"/>
                 </constraints>
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="IoI-ws-gVO"/>
+                        <exclude reference="CK3-xL-uNZ"/>
                         <exclude reference="waw-VD-2dN"/>
                         <exclude reference="zf6-MX-3D5"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JeX-BV-wRK" secondAttribute="bottom" constant="93" id="aH6-1x-YmR"/>
+                <constraint firstAttribute="bottom" secondItem="JeX-BV-wRK" secondAttribute="bottom" id="cCC-Zg-g6r"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="aH6-1x-YmR"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageViewIcon" destination="WWb-8s-39d" id="wXg-nd-jid"/>
+                <outlet property="labelTitle" destination="dVb-ph-mDE" id="XOD-Gn-5SN"/>
+            </connections>
             <point key="canvasLocation" x="296" y="90"/>
         </tableViewCell>
     </objects>
