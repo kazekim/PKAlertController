@@ -13,6 +13,7 @@
 #import <FLEXManager.h>
 
 #import "PKCustomView.h"
+#import "KBankAlertView.h"
 
 static NSString *const Title = @"When the Pawn...\nSecond line";
 static NSString *const LongTitle = @"When the Pawn Hits the Conflicts He Thinks like a King What He Knows Throws the Blows When He Goes to the Fight and He'll Win the Whole Thing 'fore He Enters the Ring There's No Body to Batter When Your Mind Is Your Might So When You Go Solo, You Hold Your Own Hand and Remember That Depth Is the Greatest of Heights and If You Know Where You Stand, Then You Know Where to Land and If You Fall It Won't Matter, Cuz You'll Know That You're Right";
@@ -48,7 +49,8 @@ typedef NS_ENUM(NSInteger, PKActionButtonType) {
 @interface PKAlertTableViewController () <UIActionSheetDelegate>
 
 @property (strong, nonatomic) IBOutletCollection(UIBarButtonItem) NSArray *switchActionButtons;
-@property (nonatomic) PKCustomView *customView;
+//@property (nonatomic) PKCustomView *customView;
+@property (nonatomic) KBankAlertView *customView;
 @property (nonatomic) PKAlertControllerPresentationTransitionStyle presentationTransitionStyle;
 @property (nonatomic) PKAlertControllerDismissTransitionStyle dismissTransitionStyle;
 @property (nonatomic) PKAlertControllerViewAppearInAnimationType viewAppearInAnimationType;
@@ -83,15 +85,17 @@ typedef NS_ENUM(NSInteger, PKActionButtonType) {
     }
     self.toolbarItems = toolbarButtonItems;
 
-    UINib *nib = [UINib nibWithNibName:NSStringFromClass([PKCustomView class]) bundle:[NSBundle mainBundle]];
-    PKCustomView *customView = [[nib instantiateWithOwner:nil options:nil] firstObject];
-    UILabel *titleLabel = (UILabel *)[customView viewWithTag:PKCustomViewTypeTitleLabel];
-    UILabel *subTitleLabel = (UILabel *)[customView viewWithTag:PKCustomViewTypeSubTitleLabel];
-    UITextView *descriptionTextView = (UITextView *)[customView viewWithTag:PKCustomViewTypeDescriptionTextView];
+//    UINib *nib = [UINib nibWithNibName:NSStringFromClass([PKCustomView class]) bundle:[NSBundle mainBundle]];
+//    PKCustomView *customView = [[nib instantiateWithOwner:nil options:nil] firstObject];
+//    UILabel *titleLabel = (UILabel *)[customView viewWithTag:PKCustomViewTypeTitleLabel];
+//    UILabel *subTitleLabel = (UILabel *)[customView viewWithTag:PKCustomViewTypeSubTitleLabel];
+//    UITextView *descriptionTextView = (UITextView *)[customView viewWithTag:PKCustomViewTypeDescriptionTextView];
 
-    titleLabel.text = Title;
-    subTitleLabel.text = @"Version 0.0.1";
-    descriptionTextView.text = Message;
+    KBankAlertView *customView = [KBankAlertView initFromNibs];
+    
+//    titleLabel.text = Title;
+//    subTitleLabel.text = @"Version 0.0.1";
+//    descriptionTextView.text = Message;
 
     self.customView = customView;
 }

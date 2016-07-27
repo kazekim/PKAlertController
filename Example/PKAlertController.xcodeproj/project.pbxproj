@@ -28,6 +28,10 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		87456A67849CC834840F5E2F /* libPods-PKAlertController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F691CE881E87D31443E0E824 /* libPods-PKAlertController.a */; };
+		BD08B63F1D47EAC900AF55C0 /* KBankAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD08B63D1D47EAC900AF55C0 /* KBankAlertView.xib */; };
+		BD08B6451D4840E400AF55C0 /* KBankAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08B6441D4840E400AF55C0 /* KBankAlertView.m */; };
+		BD08B6481D484ABF00AF55C0 /* KBankAlertCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BD08B6471D484ABF00AF55C0 /* KBankAlertCell.m */; };
+		BD08B64A1D484BD300AF55C0 /* KBankAlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD08B6491D484BD300AF55C0 /* KBankAlertCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		770FB661AABF6E705F4147FB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BD08B63E1D47EAC900AF55C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/KBankAlertView.xib; sourceTree = "<group>"; };
+		BD08B6431D4840E400AF55C0 /* KBankAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBankAlertView.h; sourceTree = "<group>"; };
+		BD08B6441D4840E400AF55C0 /* KBankAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBankAlertView.m; sourceTree = "<group>"; };
+		BD08B6461D484ABF00AF55C0 /* KBankAlertCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBankAlertCell.h; sourceTree = "<group>"; };
+		BD08B6471D484ABF00AF55C0 /* KBankAlertCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBankAlertCell.m; sourceTree = "<group>"; };
+		BD08B6491D484BD300AF55C0 /* KBankAlertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KBankAlertCell.xib; sourceTree = "<group>"; };
 		D9336124BAB25446A4CAF5F0 /* Pods-PKAlertController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKAlertController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PKAlertController/Pods-PKAlertController.debug.xcconfig"; sourceTree = "<group>"; };
 		DE2B5BDE9A33A90D22053830 /* Pods-PKAlertController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PKAlertController.release.xcconfig"; path = "Pods/Target Support Files/Pods-PKAlertController/Pods-PKAlertController.release.xcconfig"; sourceTree = "<group>"; };
 		F691CE881E87D31443E0E824 /* libPods-PKAlertController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PKAlertController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +163,12 @@
 				26145A711A9DBF7E00F28C59 /* PKCustomView.xib */,
 				26145A741A9DC4B900F28C59 /* PKCustomView.h */,
 				26145A751A9DC4B900F28C59 /* PKCustomView.m */,
+				BD08B6431D4840E400AF55C0 /* KBankAlertView.h */,
+				BD08B6441D4840E400AF55C0 /* KBankAlertView.m */,
+				BD08B63D1D47EAC900AF55C0 /* KBankAlertView.xib */,
+				BD08B6461D484ABF00AF55C0 /* KBankAlertCell.h */,
+				BD08B6471D484ABF00AF55C0 /* KBankAlertCell.m */,
+				BD08B6491D484BD300AF55C0 /* KBankAlertCell.xib */,
 			);
 			path = PKAlertController;
 			sourceTree = "<group>";
@@ -213,12 +229,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "PKAlertController" */;
 			buildPhases = (
-				26E1F9062B6639B4B353FF88 /* 📦 Check Pods Manifest.lock */,
+				26E1F9062B6639B4B353FF88 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				5FC83C65D74ADCD67C005D02 /* 📦 Embed Pods Frameworks */,
-				D5E004564F0B4FAB59B747C9 /* 📦 Copy Pods Resources */,
+				5FC83C65D74ADCD67C005D02 /* [CP] Embed Pods Frameworks */,
+				D5E004564F0B4FAB59B747C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -289,7 +305,9 @@
 			files = (
 				6003F5A4195388D20070C39A /* Main_iPad.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				BD08B64A1D484BD300AF55C0 /* KBankAlertCell.xib in Resources */,
 				6003F5A1195388D20070C39A /* Main_iPhone.storyboard in Resources */,
+				BD08B63F1D47EAC900AF55C0 /* KBankAlertView.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				26145A621A9C7F0D00F28C59 /* Launch Screen.xib in Resources */,
 				26145A731A9DBF7E00F28C59 /* PKCustomView.xib in Resources */,
@@ -307,14 +325,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		26E1F9062B6639B4B353FF88 /* 📦 Check Pods Manifest.lock */ = {
+		26E1F9062B6639B4B353FF88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +340,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5FC83C65D74ADCD67C005D02 /* 📦 Embed Pods Frameworks */ = {
+		5FC83C65D74ADCD67C005D02 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +355,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PKAlertController/Pods-PKAlertController-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D5E004564F0B4FAB59B747C9 /* 📦 Copy Pods Resources */ = {
+		D5E004564F0B4FAB59B747C9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +378,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* PKAppDelegate.m in Sources */,
+				BD08B6481D484ABF00AF55C0 /* KBankAlertCell.m in Sources */,
+				BD08B6451D4840E400AF55C0 /* KBankAlertView.m in Sources */,
 				264C5FF91A982C020060DBFE /* PKAlertTableViewController.m in Sources */,
 				26145A761A9DC4B900F28C59 /* PKCustomView.m in Sources */,
 				6003F5A7195388D20070C39A /* PKViewController.m in Sources */,
@@ -427,6 +447,14 @@
 				264C60051A98BF160060DBFE /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BD08B63D1D47EAC900AF55C0 /* KBankAlertView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD08B63E1D47EAC900AF55C0 /* Base */,
+			);
+			name = KBankAlertView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

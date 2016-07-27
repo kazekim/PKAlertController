@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="g0U-Wo-6If" customClass="KBankAlertCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g0U-Wo-6If" id="cBK-fa-Xl9">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_kmobilebankingplus" translatesAutoresizingMaskIntoConstraints="NO" id="WWb-8s-39d">
+                        <rect key="frame" x="13" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="W7b-vD-sgF"/>
+                            <constraint firstAttribute="height" constant="50" id="hTs-8X-ekC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K-Mobile Banking PLUS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dVb-ph-mDE">
+                        <rect key="frame" x="71" y="5" width="241" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Hb3-86-xVl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="WWb-8s-39d" firstAttribute="leading" secondItem="cBK-fa-Xl9" secondAttribute="leadingMargin" constant="5" id="16c-6X-Zxf"/>
+                    <constraint firstItem="dVb-ph-mDE" firstAttribute="centerY" secondItem="cBK-fa-Xl9" secondAttribute="centerY" id="DeA-96-qC1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="dVb-ph-mDE" secondAttribute="trailing" id="Hxy-Z3-SIn"/>
+                    <constraint firstItem="WWb-8s-39d" firstAttribute="top" secondItem="cBK-fa-Xl9" secondAttribute="top" constant="5" id="IoI-ws-gVO"/>
+                    <constraint firstItem="WWb-8s-39d" firstAttribute="centerY" secondItem="cBK-fa-Xl9" secondAttribute="centerY" id="XgJ-yv-tva"/>
+                    <constraint firstItem="dVb-ph-mDE" firstAttribute="leading" secondItem="WWb-8s-39d" secondAttribute="trailing" constant="8" symbolic="YES" id="az6-Rk-mnf"/>
+                    <constraint firstItem="dVb-ph-mDE" firstAttribute="top" secondItem="cBK-fa-Xl9" secondAttribute="topMargin" constant="11" id="waw-VD-2dN"/>
+                    <constraint firstItem="dVb-ph-mDE" firstAttribute="centerY" secondItem="WWb-8s-39d" secondAttribute="centerY" id="zf6-MX-3D5"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="IoI-ws-gVO"/>
+                        <exclude reference="waw-VD-2dN"/>
+                        <exclude reference="zf6-MX-3D5"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="296" y="90"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_kmobilebankingplus" width="50" height="50"/>
+    </resources>
+</document>

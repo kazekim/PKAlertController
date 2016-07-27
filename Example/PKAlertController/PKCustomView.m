@@ -66,6 +66,7 @@
         self.layoutSize = totalSize;
         [self invalidateIntrinsicContentSize];
     }
+    
     [super layoutSubviews];
 }
 
